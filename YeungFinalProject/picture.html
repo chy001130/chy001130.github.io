@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Adele Pictures</title>
+        <link rel="stylesheet" href="css/picture.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/slicknav.css">
+        <script src="./js/jquery.slicknav.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#nav_menu').slicknav(
+                    { prependTo: "#mobilemenu" });
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="grid">
+            <nav id="mobilemenu"></nav>
+            <nav id="nav_menu" class="nav">
+                <ul class="menubar">
+                    <li><a href="picture.html">Pictures</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+
+            <div class="content">
+                <!--<ul>-->
+                    <!--<li>-->
+                        <img id="contentImage" src="./image/slide1.png" alt="" />
+                    <!--</li>-->
+                <!--</ul>-->
+            </div>
+        </div>
+        <script src="./js/slideShow.js"></script>
+    </body>
+</html>
